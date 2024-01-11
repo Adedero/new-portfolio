@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Akurrat;
+  src: url(./fonts/Akkurat-Mono.OTF);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf)
+}
+
+body {
+  font-family: Montserrat;
+  min-height: 100dvh;
+  transition: 
+    color 0.3s;
+}
+
+#app {
+  min-height: 100vh;
+  max-height: 100dvh;
+  overflow-y: scroll;
+  width: 100dvw;
+}
