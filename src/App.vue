@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-<main class="flex flex-col gap-6 lg:p-6 lg:overflow-y-scroll">
+<main class="flex flex-col gap-6 lg:p-2  lg:overflow-y-scroll">
     <section ref="console" class="bg-[#2F3544] font-[Akurrat]">
       <Console @on-skip="skip" />
     </section>
@@ -87,7 +87,7 @@ section {
 }
 
 .views {
-  min-height: calc(100dvh - 5rem);
+  min-height: calc(100dvh - 7rem);
   height: calc(100dvh - 5rem);
 }
 
@@ -98,8 +98,7 @@ section {
     background: linear-gradient(to bottom, #00dbde, #fc00ff);
   }
   .views {
-    min-height: calc(100dvh - 8rem);
-    height: calc(100dvh - 8rem);
+    height: calc(100dvh - 7rem);
   }
 }
 
