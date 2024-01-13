@@ -6,7 +6,7 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <button type="button" @click="toggleDark()" class="bg-zinc-200 dark:bg-gray-700 h-8 flex items-center justify-center p-1 rounded-md">
-    <span class="material-symbols-rounded">{{ isDark? 'dark_mode': 'light_mode'}}</span>
+  <button type="button" @click="toggleDark()" class="h-8 flex">
+    <span class="material-symbols-rounded text-4xl md:text-3xl">{{ isDark? 'dark_mode': 'light_mode'}}</span>
   </button>
 </template>
