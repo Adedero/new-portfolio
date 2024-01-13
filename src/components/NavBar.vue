@@ -7,6 +7,8 @@ const props = defineProps({
     isOpen: Boolean
 })
 
+const emoits = defineEmits([ 'close-nav' ])
+
 const classList = "transition h-60 w-36 text-right overflow-y-scroll bg-white bg-opacity-50 backdrop-blur-[200px] shadow-lg fixed right-4 top-16 -z-10 opacity-0 dark:bg-gray-800 dark:bg-opacity-60 dark:backdrop-blur-[200px] rounded-lg flex flex-col justify-between p-6 text-slate-800 dark:text-[var(--light)] dark:font-light"
 
 const showNav = "transition opacity-100 z-20"

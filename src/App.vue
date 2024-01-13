@@ -17,7 +17,7 @@ let isOpen = ref(false)
       <NavBar :isOpen ="isOpen" @close-nav="isOpen = false"/>
     </div>
 
-    <section class="h-full overflow-y-scroll"> 
+    <section class="section h-full overflow-y-scroll"> 
       <RouterView />
     </section>
   </main>
@@ -30,6 +30,10 @@ main::before {
 
 main:after {
   @apply hidden dark:md:block content-[""] absolute w-40 h-40 rounded-full -z-10 bg-red-500 bottom-32 right-20 opacity-20 filter blur-[60px] 
+}
+
+.section {
+  scroll-snap-type: y mandatory;
 }
 
 </style>
