@@ -28,7 +28,7 @@ import 'animate.css'
             <button class="text-red-500 dark:text-lime-500 font-bold text-sm hover:underline">Learn more</button>
         </div>
 
-        <div class="absolute right-0 top-[36%] flex flex-col items-center justify-center gap-6 pt-2 md:justify-start md:relative md:top-0 md:pt-5 md:flex-row lg:pt-12 animate__animated animate__fadeInUp amimate__fast animate__delay-1s">
+        <div class="absolute left-0 top-[36%] flex flex-col items-center justify-center gap-6 pt-2 md:justify-start md:relative md:top-0 md:pt-5 md:flex-row lg:pt-12 animate__animated animate__fadeInUp amimate__fast animate__delay-1s">
             <a href="#">
                 <FbIcon />
             </a>
