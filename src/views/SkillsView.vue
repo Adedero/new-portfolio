@@ -12,14 +12,14 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-const secondObserver = new IntersectionObserver(entries => {
+/* const secondObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             entry.target.classList.add('animate')
         }
     })
 })
-
+ */
 
 function showPopup(event) {
     if (event.target.id === "") return
@@ -36,9 +36,9 @@ function hidePopup() {
 
 onMounted(() => {
 
-    const cardsContainer = document.querySelector('.cards-container')
+   /*  const cardsContainer = document.querySelector('.cards-container')
 
-    secondObserver.observe(cardsContainer)
+    secondObserver.observe(cardsContainer) */
 
     const cards = document.querySelectorAll('.cards-container > .card')
 
@@ -59,11 +59,13 @@ onUnmounted(() => {
     <div class="flex flex-col items-center h-[100%] md:justify-evenly md:pt-16 overflow-y-scroll">
         <h1 class="text-[var(--text)] dark:text-[var(--light)] text-[4rem] font-extrabold self-start md:hidden">skills</h1>
 
+        <p class="text-lg md:px-5 md:text-center">As time goes on, I plan on becoming a <span class="text-2xl">full stack developer.</span> But for now, here's what I got: </p>
+
         <Teleport to="body">
             <div class="popup bg-zinc-200 font-bold p-1 shadow-md rounded-md cursor-context-menu select-none absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 -z-10 transition-all" ref="popup"></div>
         </Teleport>
 
-        <div class="cards-container aspect-square mt-[25%] grid md:mt-0 md:gap-2 lg:gap-8 overflow-y-scroll p-10">
+        <div class="cards-container aspect-square mt-[10%] grid md:mt-0 md:gap-2 lg:gap-8 overflow-y-scroll p-10">
             <div class="card" id="HTML">
                 <img src="../assets/icons/html.svg" alt="html" class="w-10 h-10 object-cover">
             </div>
@@ -331,7 +333,7 @@ onUnmounted(() => {
     }
 }
 
-@keyframes squeeze-top-left {
+/* @keyframes squeeze-top-left {
     0% {
         transform: translate(0, 0);
     }
@@ -473,5 +475,5 @@ onUnmounted(() => {
     100% {
         transform: translate(50%, 0);
     }
-}
+} */
 </style>

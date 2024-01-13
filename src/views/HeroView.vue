@@ -23,12 +23,12 @@ import 'animate.css'
             Front end developer dedicated to making your designs a picture perfect reality. <br> If you can think it, I can build it!
         </p>
 
-        <div class="flex items-center justify-center md:justify-normal gap-5 md:pt-5">
-            <button class="py-2 px-10 border font-bold text-sm border-[var(--text)] dark:border-[var(--light)] rounded-full hover:bg-[var(--text)] hover:text-[var(--light)] transition-colors">Hire me</button>
+        <div class="flex items-center justify-center md:justify-normal gap-5 md:pt-5 animate__animated animate__fadeInLeft amimate__fast animate__delay-1s">
+            <button class="py-2 px-10 border-2 font-bold text-sm border-[var(--text)] dark:border-[var(--light)] rounded-full hover:bg-[var(--text)] hover:text-[var(--light)] transition-colors">Hire me</button>
             <button class="text-red-500 dark:text-lime-500 font-bold text-sm hover:underline">Learn more</button>
         </div>
 
-        <div class="absolute top-auto flex flex-col items-center justify-center gap-6 pt-2 md:justify-start md:relative md:top-0 md:pt-5 md:flex-row lg:pt-12 animate__animated animate__fadeInUp amimate__fast animate__delay-1s">
+        <div class="absolute right-0 top-[36%] flex flex-col items-center justify-center gap-6 pt-2 md:justify-start md:relative md:top-0 md:pt-5 md:flex-row lg:pt-12 animate__animated animate__fadeInUp amimate__fast animate__delay-1s">
             <a href="#">
                 <FbIcon />
             </a>
