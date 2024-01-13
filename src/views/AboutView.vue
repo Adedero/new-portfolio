@@ -55,17 +55,17 @@ import SkillsView from './SkillsView.vue';
 
 @keyframes move-before {
     0% { translate: 0 }
-    25% { translate: 200% 200% }
-    50% { translate: 0% 200%}
-    75% { translate: 200% 0 }
+    25% { translate: 95% 95% }
+    50% { translate: 0% 95%}
+    75% { translate: 95% 0 }
     100% { translate: 0;}
 }
 
 @keyframes move-after {
     0% { translate: 0 }
-    25% { translate: -200% -200% }
-    50% { translate: 0 -200%}
-    75% { translate: -200% 0 }
+    25% { translate: -95% -95% }
+    50% { translate: 0 -95%}
+    75% { translate: -95% 0 }
     100% { translate: 0;}
 }
 </style>
